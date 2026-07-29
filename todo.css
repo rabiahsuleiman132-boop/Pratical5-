@@ -1,0 +1,138 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.todo-app-container {
+  background-color: #ffffff;
+  max-width: 520px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.user-identity-badge {
+  text-align: center;
+  font-size: 12px;
+  color: #475569;
+  background-color: #f1f5f9;
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  color: #0f172a;
+  margin: 0 0 4px 0;
+  font-size: 22px;
+}
+
+.section-subtitle {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0 0 25px 0;
+}
+
+/* Entry Form Formatting */
+.task-entry-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#taskInput:focus {
+  border-color: #3b82f6;
+}
+
+#addTaskBtn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#addTaskBtn:hover {
+  background-color: #2563eb;
+}
+
+/* List Formatting */
+.task-unordered-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-list-node {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+/* Task Context Text Node */
+.task-label-string {
+  font-size: 15px;
+  color: #334155;
+  word-break: break-word;
+  flex: 1;
+  margin-right: 15px;
+  transition: all 0.2s;
+}
+
+/* Strikethrough style for completed tasks */
+.task-list-node.completed-state .task-label-string {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+/* Done Toggle Action Button */
+.btn-toggle-done {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-toggle-done:hover {
+  background-color: #059669;
+}
+
+/* Adjust button color when task is marked complete */
+.task-list-node.completed-state .btn-toggle-done {
+  background-color: #64748b;
+}

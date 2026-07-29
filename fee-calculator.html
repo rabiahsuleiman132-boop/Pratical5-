@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5.5 - University Course Fee Calculator</title>
+    <link rel="stylesheet" href="fee-calculator.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <!-- Identity Summary Header -->
+      <div class="university-badge">
+        <strong>Newgate University</strong> | Student Portal Accounts
+      </div>
+
+      <h2>Course Fee Calculator</h2>
+      <p class="subtitle">
+        Select your semester courses below to compute your total accumulated
+        units and semester registration tuition costs instantly.
+      </p>
+
+      <!-- Course Checkbox Injection List Target -->
+      <div id="courseSelectionList" class="checkbox-grid-group"></div>
+
+      <button
+        type="button"
+        class="btn-calculate"
+        onclick="computeRegistrationFees()"
+      >
+        Calculate Total Fees
+      </button>
+
+      <!-- Invoice Invoice Result Summary Box -->
+      <div id="invoiceSummaryBox" class="invoice-summary-display">
+        <h3>Registration Fee Invoice Statement</h3>
+        <div class="invoice-row">
+          <span>Total Selected Academic Units:</span>
+          <span class="invoice-value"
+            ><strong id="totalUnitsValue">0</strong> Units</span
+          >
+        </div>
+        <div class="invoice-row total-cost-row">
+          <span>Total Calculated Tuition Cost:</span>
+          <span class="invoice-value"
+            >₦<strong id="totalTuitionValue">0.00</strong></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="fee-calculator.js"></script>
+  </body>
+</html>

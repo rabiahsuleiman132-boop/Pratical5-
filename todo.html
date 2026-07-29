@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5.2 - Interactive To-Do List</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <div class="todo-app-container">
+      <!-- Structural Identity Badge header -->
+      <div class="user-identity-badge">
+        <strong>Portal User Execution Engine</strong>
+      </div>
+
+      <h2>Academic Task Tracker</h2>
+      <p class="section-subtitle">
+        Manage system implementations and review item checkpoints interactively.
+      </p>
+
+      <!-- Dynamic Entry Control Bar -->
+      <div class="task-entry-form">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task description here..."
+        />
+        <button type="button" id="addTaskBtn" onclick="addTaskItem()">
+          Add Task
+        </button>
+      </div>
+
+      <!-- Target Destination Wrapper for Dynamic Nodes -->
+      <ul id="taskList" class="task-unordered-list"></ul>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

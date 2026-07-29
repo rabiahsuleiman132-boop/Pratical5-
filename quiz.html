@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5.3 - Nigerian States Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <!-- Identity Summary Header -->
+      <div class="student-badge">
+        <strong>Newgate University Portal</strong> | Interactive Assessment
+        Engine
+      </div>
+
+      <h1>Nigerian States Quiz</h1>
+      <p class="subtitle">
+        Test your geographical knowledge. Type the correct capital city for the
+        state displayed below.
+      </p>
+
+      <!-- Scoreboard Panel -->
+      <div class="scoreboard">
+        <span>Score: <strong id="currentScore">0</strong></span>
+        <span>Questions Answered: <strong id="totalAnswered">0</strong></span>
+      </div>
+
+      <!-- Dynamic Question Area -->
+      <div class="question-box">
+        Target State: <span id="statePrompt">Loading...</span>
+      </div>
+
+      <!-- Input Form Control Group -->
+      <div class="input-group">
+        <input
+          type="text"
+          id="capitalInput"
+          placeholder="Type capital city name here..."
+          autocomplete="off"
+        />
+        <button type="button" id="submitBtn" onclick="checkAnswer()">
+          Submit Answer
+        </button>
+      </div>
+
+      <!-- Feedback and Navigation Elements -->
+      <div id="feedbackBox" class="feedback-display"></div>
+      <button
+        type="button"
+        id="nextBtn"
+        class="btn-next"
+        onclick="generateNextQuestion()"
+        style="display: none"
+      >
+        Next State
+      </button>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

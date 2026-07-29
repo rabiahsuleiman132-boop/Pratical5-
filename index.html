@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Suleiman Rabiat | 25B-UE-BCSX-10024 - Practical 5 Portfolio</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Inter,system-ui,sans-serif;background:#0a0f1e;color:#e2e8f0;min-height:100vh}
+  .bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(800px 500px at 15% -10%, rgba(59,130,246,0.25), transparent 60%),radial-gradient(700px 400px at 85% 0%, rgba(16,185,129,0.20), transparent 60%),radial-gradient(600px 400px at 50% 120%, rgba(139,92,246,0.18), transparent 60%),#0a0f1e}
+  .container{max-width:1100px;margin:0 auto;padding:28px 20px 60px}
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0 32px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;color:white}
+  .logo-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);display:grid;place-items:center;color:white;font-weight:800}
+  .nav-badge{font-family:monospace;font-size:11px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:6px 12px;border-radius:20px;color:#94a3b8}
+  .hero{text-align:center;padding:10px 0 28px}
+  .pill{display:inline-flex;gap:8px;align-items:center;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);color:#86efac;padding:6px 14px;border-radius:100px;font-size:12px;font-weight:600;margin-bottom:18px}
+  .dot{width:6px;height:6px;background:#22c55e;border-radius:50%;box-shadow:0 0 0 3px rgba(34,197,94,0.25)}
+  h1{font-size:clamp(34px,6vw,54px);font-weight:800;line-height:0.95;letter-spacing:-2px;color:white;margin-bottom:14px}
+  h1 span{background:linear-gradient(90deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .hero-desc{color:#94a3b8;font-size:15px;max-width:600px;margin:0 auto 22px;line-height:1.6}
+  .student{margin:0 auto 36px;max-width:560px;background:linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03));border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:16px 20px;display:flex;align-items:center;gap:14px;backdrop-filter:blur(12px)}
+  .avatar{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#3b82f6 0%,#8b5cf6 100%);display:grid;place-items:center;font-weight:800;color:white;font-size:18px;flex-shrink:0}
+  .student-info{text-align:left}
+  .student-info b{display:block;color:white;font-size:15px}
+  .student-info small{color:#94a3b8;font-size:12.5px;font-family:monospace}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:22px;transition:all .25s ease;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-4px);background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.15);box-shadow:0 20px 40px rgba(0,0,0,0.3)}
+  .card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .icon{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font-size:18px;font-weight:800}
+  .tag{font-size:10px;letter-spacing:.7px;text-transform:uppercase;padding:4px 9px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);color:#94a3b8;background:rgba(255,255,255,0.05)}
+  .card h3{color:white;font-size:17px;font-weight:700;margin-bottom:8px}
+  .card p{color:#94a3b8;font-size:13px;line-height:1.6;flex:1;margin-bottom:16px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+  .chip{font-size:11px;padding:4px 8px;border-radius:6px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.07);color:#cbd5e1}
+  .btn{width:100%;display:flex;justify-content:center;align-items:center;gap:8px;padding:11px 14px;border-radius:11px;text-decoration:none;font-weight:600;font-size:13.5px;transition:.2s}
+  .btn-main{background:white;color:#0a0f1e}
+  .btn-main:hover{background:#e2e8f0}
+  .blue .icon{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.2)}
+  .green .icon{background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.2)}
+  .amber .icon{background:rgba(245,158,11,0.15);color:#fbbf24;border:1px solid rgba(245,158,11,0.2)}
+  .violet .icon{background:rgba(139,92,246,0.15);color:#a78bfa;border:1px solid rgba(139,92,246,0.2)}
+  .cyan .icon{background:rgba(6,182,212,0.15);color:#22d3ee;border:1px solid rgba(6,182,212,0.2)}
+  footer{text-align:center;margin-top:44px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);color:#64748b;font-size:12.5px;line-height:1.6}
+  footer b{color:#94a3b8}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="container">
+  <nav class="nav">
+    <div class="logo"><div class="logo-mark">S</div> Suleiman Rabiat</div>
+    <div class="nav-badge">25B-UE-BCSX-10024</div>
+  </nav>
+  <section class="hero">
+    <div class="pill"><span class="dot"></span> PRACTICAL 5 • All Tasks Linked • Ready for Vercel</div>
+    <h1>Web Projects <span>Portfolio</span></h1>
+    <p class="hero-desc">All your Practical 5 files in one place. Click any card to open the project. Everything is in the same folder as seen in your VS Code.</p>
+    <div class="student">
+      <div class="avatar">SR</div>
+      <div class="student-info">
+        <b>Suleiman Rabiat</b>
+        <small>Matric: 25B-UE-BCSX-10024 • Computer Science • Newgate University</small>
+      </div>
+    </div>
+  </section>
+  <main class="grid">
+    <div class="card amber">
+      <div class="card-head"><div class="icon">₦</div><span class="tag">fee-calculator.html</span></div>
+      <h3>Course Fee Calculator</h3>
+      <p>Select semester courses to compute total units and tuition invoice in Naira.</p>
+      <div class="chips"><span class="chip">Invoice Logic</span><span class="chip">₦</span><span class="chip">Checkbox</span></div>
+      <a class="btn btn-main" href="fee-calculator.html">Open Fee Calculator →</a>
+    </div>
+    <div class="card blue">
+      <div class="card-head"><div class="icon">A+</div><span class="tag">grade-calculator.html</span></div>
+      <h3>Grade Calculator</h3>
+      <p>Enter course title & score (0-100) to get instant grade letter and automated tests.</p>
+      <div class="chips"><span class="chip">Conditionals</span><span class="chip">DOM</span><span class="chip">Tests</span></div>
+      <a class="btn btn-main" href="grade-calculator.html">Open Grade Calculator →</a>
+    </div>
+    <div class="card green">
+      <div class="card-head"><div class="icon">NG</div><span class="tag">quiz.html</span></div>
+      <h3>Nigerian
