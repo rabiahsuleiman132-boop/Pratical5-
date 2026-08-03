@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home — TrustVerify NG</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verify Vendor — TrustVerify NG</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
 <style>
 :root{
   --navy:#0a1931;
@@ -70,8 +70,8 @@ footer{background:var(--navy);color:rgba(255,255,255,0.65);padding:50px 0;margin
     <div class="nav-inner">
       <a href="index.html" class="logo"><div class="logo-badge">TV</div> TrustVerify NG</a>
       <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="verify.html" class="">Verify</a>
+        <a href="index.html" class="">Home</a>
+        <a href="verify.html" class="active">Verify</a>
         <a href="directory.html" class="">Directory</a>
         <a href="report.html" class="">Report</a>
         <a href="quiz.html" class="">Cyber Drill</a>
@@ -88,13 +88,10 @@ footer{background:var(--navy);color:rgba(255,255,255,0.65);padding:50px 0;margin
 </nav>
 </header>
 <main>
-<section class="hero"><div class="container"><span class="pill">🛡️ Real Problem • Real Solution • 100% Frontend</span><h1>Verify any online vendor<br>before you pay.</h1><p>TrustVerify NG helps customers identify trustworthy vendors and encourages vendors to follow basic cybersecurity practices. Search by name, Instagram handle, or phone number.</p><div class="search-wrap"><input id="homeSearchInput" placeholder="e.g @jaysgadgets_jos or 0803..."><button id="homeSearchBtn" class="btn btn-primary">Verify Now →</button></div><div style="display:flex;gap:18px;margin-top:22px;flex-wrap:wrap"><div><div class="stat">6</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Vendors in demo DB</div></div><div><div class="stat">92%</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Avg Verified Score</div></div><div><div class="stat">100%</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Frontend Only</div></div></div></div></section>
-<section class="section"><div class="container"><div class="grid3">
-<div class="card" style="padding:22px"><h3>🔍 Customer Verification</h3><p style="color:var(--muted);margin-top:8px">Search vendors instantly. See Verified / Pending / Risky badge, trust score, and what security checks they passed.</p></div>
-<div class="card" style="padding:22px"><h3>🛡️ Vendor Encouragement</h3><p style="color:var(--muted);margin-top:8px">Vendors must pass HTTPS, CAC check, secure payments, and our Cyber Drill quiz to earn higher trust score.</p></div>
-<div class="card" style="padding:22px"><h3>🚩 Report System</h3><p style="color:var(--muted);margin-top:8px">Any vendor can report suspicious vendors or report issues with this site. Community keeps the system clean.</p></div>
-</div>
-<div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap"><a href="verify.html" class="btn btn-dark">Start Verifying →</a><a href="quiz.html" class="btn" style="background:white;border:1px solid #e5eaf0">Take Cyber Drill</a></div>
+<section class="section" style="padding-top:34px"><div class="container"><h1 style="font-size:2.2rem;letter-spacing:-0.03em">Vendor Verification Engine</h1><p style="color:var(--muted);max-width:600px;margin:8px 0 18px">Type vendor name, Instagram handle, phone or website. Our JS engine checks our local verified database and simulates security analysis.</p>
+<div class="card" style="padding:10px;display:flex;gap:10px;max-width:720px"><input id="verifyInput" class="input" style="border:none" placeholder="Search e.g Jays Gadgets, @luxekicksng, 0803..."><button id="verifyBtn" class="btn btn-primary">Search</button></div>
+<div id="results" style="margin-top:22px;display:grid;gap:14px;max-width:800px"></div>
+<div class="card" style="margin-top:28px;padding:18px;background:#f0fbff;border:1px dashed #8fe2ff"><strong>How scoring works:</strong><ul style="margin-left:18px;color:var(--muted);font-size:.92rem;margin-top:6px"><li>90-100% Verified - Strong cyber hygiene</li><li>60-89% Pending - Needs more checks</li><li>0-59% Risky - Be careful, report if scam</li></ul></div>
 </div></section>
 </main>
 <footer>

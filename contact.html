@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home — TrustVerify NG</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — TrustVerify NG</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
 <style>
 :root{
   --navy:#0a1931;
@@ -70,13 +70,13 @@ footer{background:var(--navy);color:rgba(255,255,255,0.65);padding:50px 0;margin
     <div class="nav-inner">
       <a href="index.html" class="logo"><div class="logo-badge">TV</div> TrustVerify NG</a>
       <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="">Home</a>
         <a href="verify.html" class="">Verify</a>
         <a href="directory.html" class="">Directory</a>
         <a href="report.html" class="">Report</a>
         <a href="quiz.html" class="">Cyber Drill</a>
         <a href="about.html" class="">About</a>
-        <a href="contact.html" class="">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </div>
       <button class="btn btn-ghost" onclick="location.href='verify.html'">Check Vendor</button>
       <button id="hamburger" class="hamburger">☰</button>
@@ -88,14 +88,11 @@ footer{background:var(--navy);color:rgba(255,255,255,0.65);padding:50px 0;margin
 </nav>
 </header>
 <main>
-<section class="hero"><div class="container"><span class="pill">🛡️ Real Problem • Real Solution • 100% Frontend</span><h1>Verify any online vendor<br>before you pay.</h1><p>TrustVerify NG helps customers identify trustworthy vendors and encourages vendors to follow basic cybersecurity practices. Search by name, Instagram handle, or phone number.</p><div class="search-wrap"><input id="homeSearchInput" placeholder="e.g @jaysgadgets_jos or 0803..."><button id="homeSearchBtn" class="btn btn-primary">Verify Now →</button></div><div style="display:flex;gap:18px;margin-top:22px;flex-wrap:wrap"><div><div class="stat">6</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Vendors in demo DB</div></div><div><div class="stat">92%</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Avg Verified Score</div></div><div><div class="stat">100%</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Frontend Only</div></div></div></div></section>
-<section class="section"><div class="container"><div class="grid3">
-<div class="card" style="padding:22px"><h3>🔍 Customer Verification</h3><p style="color:var(--muted);margin-top:8px">Search vendors instantly. See Verified / Pending / Risky badge, trust score, and what security checks they passed.</p></div>
-<div class="card" style="padding:22px"><h3>🛡️ Vendor Encouragement</h3><p style="color:var(--muted);margin-top:8px">Vendors must pass HTTPS, CAC check, secure payments, and our Cyber Drill quiz to earn higher trust score.</p></div>
-<div class="card" style="padding:22px"><h3>🚩 Report System</h3><p style="color:var(--muted);margin-top:8px">Any vendor can report suspicious vendors or report issues with this site. Community keeps the system clean.</p></div>
-</div>
-<div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap"><a href="verify.html" class="btn btn-dark">Start Verifying →</a><a href="quiz.html" class="btn" style="background:white;border:1px solid #e5eaf0">Take Cyber Drill</a></div>
-</div></section>
+<section class="section" style="padding-top:34px"><div class="container"><div class="grid2"><div><h1>Contact Us</h1><p style="color:var(--muted);margin-top:8px">Have a vendor to verify? Found a bug? Want to partner? Reach us.</p><div style="margin-top:20px;display:grid;gap:14px">
+<div class="card" style="padding:16px;display:flex;gap:12px;align-items:center"><div style="width:40px;height:40px;background:#e6fbf5;border-radius:10px;display:grid;place-items:center">📍</div><div><strong>Location</strong><br><span style="color:var(--muted);font-size:.9rem">Jos, Plateau State, Nigeria</span></div></div>
+<div class="card" style="padding:16px;display:flex;gap:12px;align-items:center"><div style="width:40px;height:40px;background:#eef2ff;border-radius:10px;display:grid;place-items:center">📧</div><div><strong>Email</strong><br><span style="color:var(--muted);font-size:.9rem">hello@trustverify.ng (demo)</span></div></div>
+<div class="card" style="padding:16px;display:flex;gap:12px;align-items:center"><div style="width:40px;height:40px;background:#fff6e0;border-radius:10px;display:grid;place-items:center">💬</div><div><strong>WhatsApp - Suleiman Rabiat</strong><br><span style="color:var(--muted);font-size:.9rem">09164074685</span></div></div>
+</div></div><div class="card" style="padding:22px"><h3>Send Message</h3><form id="contactForm" style="margin-top:14px;display:grid;gap:12px"><div><label>Your Name</label><input class="input" required></div><div><label>Email</label><input class="input" type="email" required></div><div><label>Message</label><textarea class="input" rows="4" required placeholder="How can we help?"></textarea></div><button class="btn btn-primary" type="submit">Send Message</button><div id="contactSuccess" style="display:none;padding:12px;background:#e6fbf5;border-radius:10px;color:#0a8a66;font-weight:600">✅ Message captured! (Add Formspree for real emails)</div></form><p style="color:var(--muted);font-size:.82rem;margin-top:12px">To make form real: create free form at formspree.io and set form action to your endpoint.</p></div></div></div></section>
 </main>
 <footer>
   <div class="container">

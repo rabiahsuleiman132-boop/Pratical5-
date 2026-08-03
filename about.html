@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home — TrustVerify NG</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About — TrustVerify NG</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
 <style>
 :root{
   --navy:#0a1931;
@@ -70,12 +70,12 @@ footer{background:var(--navy);color:rgba(255,255,255,0.65);padding:50px 0;margin
     <div class="nav-inner">
       <a href="index.html" class="logo"><div class="logo-badge">TV</div> TrustVerify NG</a>
       <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="">Home</a>
         <a href="verify.html" class="">Verify</a>
         <a href="directory.html" class="">Directory</a>
         <a href="report.html" class="">Report</a>
         <a href="quiz.html" class="">Cyber Drill</a>
-        <a href="about.html" class="">About</a>
+        <a href="about.html" class="active">About</a>
         <a href="contact.html" class="">Contact</a>
       </div>
       <button class="btn btn-ghost" onclick="location.href='verify.html'">Check Vendor</button>
@@ -88,14 +88,7 @@ footer{background:var(--navy);color:rgba(255,255,255,0.65);padding:50px 0;margin
 </nav>
 </header>
 <main>
-<section class="hero"><div class="container"><span class="pill">🛡️ Real Problem • Real Solution • 100% Frontend</span><h1>Verify any online vendor<br>before you pay.</h1><p>TrustVerify NG helps customers identify trustworthy vendors and encourages vendors to follow basic cybersecurity practices. Search by name, Instagram handle, or phone number.</p><div class="search-wrap"><input id="homeSearchInput" placeholder="e.g @jaysgadgets_jos or 0803..."><button id="homeSearchBtn" class="btn btn-primary">Verify Now →</button></div><div style="display:flex;gap:18px;margin-top:22px;flex-wrap:wrap"><div><div class="stat">6</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Vendors in demo DB</div></div><div><div class="stat">92%</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Avg Verified Score</div></div><div><div class="stat">100%</div><div style="color:rgba(255,255,255,0.6);font-size:.85rem">Frontend Only</div></div></div></div></section>
-<section class="section"><div class="container"><div class="grid3">
-<div class="card" style="padding:22px"><h3>🔍 Customer Verification</h3><p style="color:var(--muted);margin-top:8px">Search vendors instantly. See Verified / Pending / Risky badge, trust score, and what security checks they passed.</p></div>
-<div class="card" style="padding:22px"><h3>🛡️ Vendor Encouragement</h3><p style="color:var(--muted);margin-top:8px">Vendors must pass HTTPS, CAC check, secure payments, and our Cyber Drill quiz to earn higher trust score.</p></div>
-<div class="card" style="padding:22px"><h3>🚩 Report System</h3><p style="color:var(--muted);margin-top:8px">Any vendor can report suspicious vendors or report issues with this site. Community keeps the system clean.</p></div>
-</div>
-<div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap"><a href="verify.html" class="btn btn-dark">Start Verifying →</a><a href="quiz.html" class="btn" style="background:white;border:1px solid #e5eaf0">Take Cyber Drill</a></div>
-</div></section>
+<section class="section" style="padding-top:34px"><div class="container"><div class="grid2"><div><h1 style="font-size:2.6rem;line-height:1;letter-spacing:-0.04em">We make online shopping in Nigeria safer.</h1><p style="color:var(--muted);margin-top:14px;font-size:1.05rem">TrustVerify NG was built to solve a real problem: customers can't tell which Instagram / WhatsApp vendors are real, and honest vendors have no way to prove they follow basic cybersecurity.</p><div style="margin-top:20px;display:grid;gap:12px"><div class="card" style="padding:16px">🎯 <strong>Mission:</strong> Reduce vendor fraud by 80% via transparent verification and education.</div><div class="card" style="padding:16px">👁️ <strong>Vision:</strong> Every Nigerian online vendor has a trust score, like a CAC + cyber hygiene badge.</div></div></div><div class="card" style="padding:22px"><h3>How Verification Works</h3><ol style="margin-left:18px;margin-top:12px;display:grid;gap:10px;color:var(--muted)"><li><strong>Vendor submits:</strong> CAC (optional), socials age, physical shop, payment method, website SSL</li><li><strong>Takes Cyber Drill Quiz:</strong> Must score 60%+</li><li><strong>Gets Score:</strong> JS calculates checks → 0-100%</li><li><strong>Listed:</strong> In Directory as Verified / Pending / Risky</li><li><strong>Community Policing:</strong> Other vendors can report bad actors</li></ol><div style="margin-top:18px"><span class="badge verified">100% Frontend</span> <span class="badge pending"> Ready</span> <span class="badge" style="background:#eef2ff;color:#2a4b9a">No PHP/DB</span></div></div></div><div class="card" style="padding:24px;margin-top:22px"><h3>Tech Stack (for your defense)</h3><p style="color:var(--muted);margin-top:6px">Pure HTML5, Modern CSS3 (variables, grid, flex, glassmorphism), Vanilla JS. Data in js/data.js JSON. Reports in localStorage. Deploy: just drag folder to . No build step.</p></div></div></section>
 </main>
 <footer>
   <div class="container">
